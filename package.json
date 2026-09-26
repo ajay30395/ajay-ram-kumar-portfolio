@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy:cloudflare": "npm run build && npx wrangler pages deploy out --project-name ajay-ram-kumar-portfolio --branch main"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
